@@ -526,7 +526,9 @@
   }
 
   .include-check {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--red);
   }
 
   .include-item h4 {

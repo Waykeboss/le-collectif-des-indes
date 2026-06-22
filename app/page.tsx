@@ -1,4 +1,5 @@
 import ScrollInit from '@/components/ScrollInit'
+import { Target, Users, Zap, Bot, TrendingUp, Settings2, MapPin, Network, Mic, Handshake } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -70,22 +71,22 @@ export default function Home() {
           </div>
           <div className="features-grid fade-up">
             <div className="feature-card">
-              <div className="feature-icon">🎯</div>
+              <div className="feature-icon"><Target size={22} strokeWidth={1.75} /></div>
               <h3>Un plan. Pas un catalogue de contenu.</h3>
               <p>Dès ton arrivée, tu passes un audit IA complet de ton business. Tu repars avec un plan d&apos;action personnalisé. Tu n&apos;as plus à te demander par où commencer : tu suis le plan.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">👥</div>
+              <div className="feature-icon"><Users size={22} strokeWidth={1.75} /></div>
               <h3>Des pairs, pas un professeur.</h3>
               <p>Le collectif, c&apos;est des indépendants comme toi qui avancent au même rythme. L&apos;entraide remplace l&apos;isolement. Le collectif te pousse quand tu flanche : et tu fais pareil pour eux.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">⚡</div>
+              <div className="feature-icon"><Zap size={22} strokeWidth={1.75} /></div>
               <h3>De l&apos;exécution, pas de la théorie.</h3>
               <p>Chaque atelier collectif est centré sur l&apos;application. On ne parle pas de ce qu&apos;il faudrait faire : on le fait ensemble. Tu repars à chaque session avec quelque chose de concret à mettre en place.</p>
             </div>
             <div className="feature-card">
-              <div className="feature-icon">🤖</div>
+              <div className="feature-icon"><Bot size={22} strokeWidth={1.75} /></div>
               <h3>L&apos;IA comme outil, pas comme sujet.</h3>
               <p>Le prompt engineering n&apos;est pas un module à part. C&apos;est l&apos;outil qu&apos;on utilise à chaque étape : pour créer du contenu, prospecter, structurer son business. Tu l&apos;appliques directement, dès le début.</p>
             </div>
@@ -230,47 +231,47 @@ export default function Home() {
           <h2 className="display">Tout ce qu&apos;il te faut pour avancer. Rien de superflu.</h2>
           <div className="includes-grid fade-up">
             <div className="include-item">
-              <span className="include-check">🎯</span>
+              <span className="include-check"><Target size={20} strokeWidth={1.75} /></span>
               <h4>Audit IA + Plan d&apos;action</h4>
               <p>Un état des lieux complet de ton business dès l&apos;arrivée, avec un plan personnalisé et concret pour la suite.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">📈</span>
+              <span className="include-check"><TrendingUp size={20} strokeWidth={1.75} /></span>
               <h4>Parcours Acquisition complet</h4>
               <p>LinkedIn, leads magnets, groupe d&apos;entraide, contenu IA, prospection. Tout le système, étape par étape.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">⚙️</span>
+              <span className="include-check"><Settings2 size={20} strokeWidth={1.75} /></span>
               <h4>Parcours Structuration</h4>
               <p>Parcours client, CRM Notion prêt à l&apos;emploi, automatisations. Ton business qui tourne même sans toi.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">🤖</span>
+              <span className="include-check"><Bot size={20} strokeWidth={1.75} /></span>
               <h4>Prompt Engineering intégré</h4>
               <p>Prompts prêts à l&apos;emploi à chaque étape. Tu gagnes du temps sur tout, dès le premier jour.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">👥</span>
+              <span className="include-check"><Users size={20} strokeWidth={1.75} /></span>
               <h4>Ateliers collectifs (80% distanciel)</h4>
               <p>Des sessions régulières pour appliquer, pas juste écouter. En groupe, avec de l&apos;accountability réelle.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">📍</span>
+              <span className="include-check"><MapPin size={20} strokeWidth={1.75} /></span>
               <h4>Événements présentiels</h4>
               <p>Lancé dans le Sud (Marseille, Toulon), le collectif s&apos;étend progressivement dans toute la France avec des événements dans de nouvelles villes.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">🔗</span>
+              <span className="include-check"><Network size={20} strokeWidth={1.75} /></span>
               <h4>Communauté permanente</h4>
               <p>Entraide, questions, partages au quotidien. Tu n&apos;es plus jamais seul face à un problème ou une décision.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">🎤</span>
+              <span className="include-check"><Mic size={20} strokeWidth={1.75} /></span>
               <h4>Session expert invité</h4>
               <p>Un éclairage complémentaire par un expert extérieur sur une thématique clé du business solo.</p>
             </div>
             <div className="include-item">
-              <span className="include-check">🤝</span>
+              <span className="include-check"><Handshake size={20} strokeWidth={1.75} /></span>
               <h4>Événement networking exclusif</h4>
               <p>Un temps dédié aux mises en relation concrètes et aux opportunités d&apos;affaires entre membres.</p>
             </div>
