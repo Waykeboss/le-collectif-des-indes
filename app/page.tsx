@@ -282,18 +282,18 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="section-label">Les fondateurs</div>
-          <h2 className="display" style={{fontSize: 'clamp(32px, 4vw, 48px)', maxWidth: '640px', marginBottom: '16px'}}>Deux frères. Cinq ans de terrain. Une vision commune.</h2>
-          <p style={{fontSize: '17px', color: 'var(--grey)', maxWidth: '600px'}}>On n&apos;a pas créé le Collectif pour vendre des formations. On l&apos;a créé parce qu&apos;on a vécu exactement ce que vivent nos membres : et qu&apos;on a trouvé les leviers qui changent vraiment la donne.</p>
+          <h2 className="display" style={{fontSize: 'clamp(32px, 4vw, 48px)', maxWidth: '640px', marginBottom: '16px'}}>Le terrain et la data. Le vécu et la méthode.</h2>
+          <p style={{fontSize: '17px', color: 'var(--grey)', maxWidth: '600px'}}>Le Collectif n&apos;est pas né d&apos;une idée. Il est né d&apos;une histoire vraie : un frère qui a tout construit seul depuis 2019, un frère dans la data depuis Aix-Marseille jusqu&apos;à EDF. Ce qu&apos;ils ont appris, tu n&apos;auras pas à le découvrir seul.</p>
           <div className="founders-grid fade-up">
             <div className="founder-card">
-              <span className="founder-role">Marketing · Closing · Parcours client</span>
+              <span className="founder-role">Marketing · Closing · Acquisition</span>
               <h3>Yacoub Keita</h3>
-              <p>Cinq ans d&apos;expérience en marketing, closing et structuration de business. Il <strong>cartographie les parcours clients</strong> pour bâtir des systèmes d&apos;acquisition et de conversion qui tournent : en intégrant l&apos;IA comme levier de productivité au quotidien.</p>
+              <p>En 2019, il prépare une boutique de vêtements pendant un an. En 2020, le Covid efface tout. Il pivote, apprend le marketing digital seul et atteint ses premiers 10 000€/mois. Il lance ensuite une marque de montres par crowdfunding, maîtrise le closing et se construit une communauté de 3 000 abonnés LinkedIn.<br/>En 2025, le solo lui coûte sa santé : surmenage, diagnostic de diabète. Le Collectif est sa réponse directe à tout ça. Il connaît le chemin parce qu&apos;il l&apos;a payé.</p>
             </div>
             <div className="founder-card">
-              <span className="founder-role">Data · Intelligence artificielle</span>
+              <span className="founder-role">Data · IA · Automatisation</span>
               <h3>Mohamed Keita</h3>
-              <p>Cinq ans dans la data et l&apos;IA. Il <strong>transforme la technologie en avantage concret</strong> pour les indépendants : automatisations, systèmes intelligents, outils qui font gagner du temps sur les tâches à faible valeur ajoutée.</p>
+              <p>Master en Mathématiques Appliquées, Aix-Marseille. Data Scientist, Data Engineer, MLOps Engineer. Aujourd&apos;hui Consultant Data/IA chez Talan en mission chez EDF : agents IA, LLM (Mistral AI, LangChain), pipelines ETL, automatisations en production.<br/>Co-fondateur de Data Afrique Hub (200+ participants formés), enseignant à Le Wagon Nice. Ses analyses data ont directement nourri les décisions business de son frère pendant des années. Aujourd&apos;hui, il les met au service de tous les membres.</p>
             </div>
           </div>
         </div>
