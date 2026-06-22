@@ -796,8 +796,8 @@
       min-height: auto;
     }
 
-    /* Hero h1 : police réduite pour que chaque ligne tienne sans overflow */
-    .hero h1 { font-size: clamp(22px, 5.8vw, 32px); }
+    /* Hero h1 : taille titre sur mobile */
+    .hero h1 { font-size: clamp(28px, 7vw, 42px); }
 
     /* Hero badge : wrap proprement */
     .hero-badge { flex-wrap: wrap; gap: 10px; }
@@ -881,8 +881,8 @@
     section { padding: 56px 20px; }
     .hero { padding: 100px 20px 48px; }
 
-    /* Hero h1 encore plus petit sur très petits écrans */
-    .hero h1 { font-size: clamp(18px, 5.5vw, 26px); }
+    /* Hero h1 : max viable sans overflow sur petits mobiles */
+    .hero h1 { font-size: clamp(24px, 7.5vw, 32px); }
 
     /* Pain number moins massif */
     .pain-number { font-size: 52px; }
