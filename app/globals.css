@@ -756,14 +756,158 @@
     transform: translateY(0);
   }
 
-  /* ── RESPONSIVE ── */
+  /* ══════════════════════════════════════════
+     RESPONSIVE — 3 breakpoints
+     lg  : ≤ 1024px  (petits desktops / tablettes landscape)
+     md  : ≤ 768px   (tablettes portrait / grands mobiles)
+     sm  : ≤ 480px   (mobiles)
+  ══════════════════════════════════════════ */
+
+  /* ── LG : ≤ 1024px ── */
+  @media (max-width: 1024px) {
+    section { padding: 80px 40px; }
+    .hero { padding: 130px 40px 72px; }
+
+    /* Grilles 3 col → 2 col */
+    .pain-grid { grid-template-columns: repeat(2, 1fr); }
+    .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+    .includes-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Pillars header : on empile */
+    .pillars-header { grid-template-columns: 1fr; gap: 24px; margin-bottom: 48px; }
+
+    /* Pain statement */
+    .pain-statement { gap: 48px; }
+
+    /* Pricing : un peu moins d'espace */
+    .pricing-inner { gap: 48px; }
+  }
+
+  /* ── MD : ≤ 768px ── */
   @media (max-width: 768px) {
+    /* Nav */
     nav { padding: 16px 24px; }
-    section { padding: 72px 24px; }
-    .hero { padding: 120px 24px 60px; }
-    .pain-grid, .features-grid, .pillars-grid, .includes-grid, .founders-grid { grid-template-columns: 1fr; }
-    .pain-statement, .pillars-header, .pricing-inner { grid-template-columns: 1fr; gap: 40px; }
-    .pillar-ia { flex-direction: column; align-items: flex-start; gap: 20px; }
-    .parcours-step { grid-template-columns: 1fr; gap: 16px; }
-    footer { flex-direction: column; gap: 16px; text-align: center; }
+    nav a.cta-nav { padding: 9px 16px; font-size: 13px; }
+
+    /* Sections */
+    section { padding: 64px 24px; }
+    .hero {
+      padding: 110px 24px 56px;
+      min-height: auto;
+    }
+
+    /* Hero : les lignes H1 peuvent wrapper */
+    .h1-line { white-space: normal; }
+
+    /* Hero badge : wrap proprement */
+    .hero-badge { flex-wrap: wrap; gap: 10px; }
+
+    /* Bouton CTA full-width sur mobile */
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .btn-primary { width: 100%; text-align: center; }
+
+    /* Grilles → 1 col */
+    .pain-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .pillars-grid { grid-template-columns: 1fr; }
+    .includes-grid { grid-template-columns: 1fr; }
+    .founders-grid { grid-template-columns: 1fr; gap: 24px; }
+
+    /* Pain statement */
+    .pain-statement {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-top: 56px;
+      padding-top: 48px;
+    }
+
+    /* Solution intro */
+    .solution-intro { margin-bottom: 40px; }
+    .solution-intro p { font-size: 17px; }
+
+    /* Pillars header */
+    .pillars-header { grid-template-columns: 1fr; gap: 20px; margin-bottom: 40px; }
+
+    /* Pillar IA : wrap */
+    .pillar-ia {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .pillar-ia h3 { white-space: normal; }
+
+    /* Parcours : step-meta en ligne au-dessus du contenu */
+    .parcours-step {
+      grid-template-columns: 1fr;
+      gap: 12px;
+      padding: 32px 0;
+    }
+    .step-meta {
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    }
+    .step-num { font-size: 36px; }
+
+    /* Pricing */
+    .pricing-inner { grid-template-columns: 1fr; gap: 40px; }
+    .pricing-card-top { padding: 28px 28px; }
+    .pricing-card-body { padding: 28px 28px; }
+    .price-amount .number { font-size: 56px; }
+
+    /* Final CTA */
+    .final-cta .btn-primary {
+      width: 100%;
+      font-size: 16px;
+      padding: 18px 24px;
+    }
+
+    /* Footer */
+    footer {
+      flex-direction: column;
+      gap: 12px;
+      text-align: center;
+      padding: 32px 24px;
+    }
+  }
+
+  /* ── SM : ≤ 480px ── */
+  @media (max-width: 480px) {
+    /* Nav : logo + bouton compact */
+    nav { padding: 14px 20px; }
+    nav a.cta-nav { padding: 8px 14px; font-size: 12px; }
+
+    /* Sections */
+    section { padding: 56px 20px; }
+    .hero { padding: 100px 20px 48px; }
+
+    /* Pain number moins massif */
+    .pain-number { font-size: 52px; }
+    .pain-card { padding: 32px 24px; }
+
+    /* Feature card */
+    .feature-card { padding: 32px 24px; }
+
+    /* Pillar */
+    .pillar { padding: 32px 24px; }
+
+    /* Include item */
+    .include-item { padding: 28px 24px; }
+
+    /* Founder card */
+    .founder-card { padding: 32px 28px; }
+    .founder-card h3 { font-size: 22px; }
+    .founder-card p { font-size: 15px; }
+
+    /* Step tags : wrap ok */
+    .tag { font-size: 12px; padding: 4px 12px; }
+
+    /* Pricing */
+    .pricing-card-top { padding: 24px 20px; }
+    .pricing-card-body { padding: 24px 20px; }
+    .price-amount .number { font-size: 48px; }
+    .price-amount .currency { font-size: 22px; }
+
+    /* Footer */
+    footer { padding: 28px 20px; font-size: 12px; }
   }
